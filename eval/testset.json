@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "description": "MemKeep 跨会话记忆测试集：50 题，覆盖五类记忆与未知边界",
+    "score_rule": "answer 类：回答需含全部/多数 keywords 判对；refuse 类：回答需明确表示没有记录，不得编造",
+    "total": 50
+  },
+  "cases": [
+    {"id": 1,  "category": "identity",   "type": "answer", "question": "我是哪个学校的什么专业？", "expected": "北京邮电大学电子商务专业，大三", "keywords": ["北京邮电", "电子商务"]},
+    {"id": 2,  "category": "identity",   "type": "answer", "question": "我家在哪？", "expected": "河北石家庄", "keywords": ["石家庄"]},
+    {"id": 3,  "category": "identity",   "type": "answer", "question": "我现在在哪个城市上学？", "expected": "北京", "keywords": ["北京"]},
+    {"id": 4,  "category": "identity",   "type": "answer", "question": "我读大几？", "expected": "大三", "keywords": ["大三"]},
+    {"id": 5,  "category": "identity",   "type": "answer", "question": "我考研打算考什么方向？", "expected": "计算机为主，金融备选", "keywords": ["计算机", "金融"]},
+    {"id": 6,  "category": "identity",   "type": "answer", "question": "计算机和金融，我更想学哪个？", "expected": "计算机", "keywords": ["计算机"]},
+    {"id": 7,  "category": "identity",   "type": "answer", "question": "我考研的目标院校是什么层次？", "expected": "985", "keywords": ["985"]},
+    {"id": 8,  "category": "identity",   "type": "answer", "question": "我是什么学历状态？", "expected": "本科在读，大三", "keywords": ["本科", "大三"]},
+    {"id": 9,  "category": "identity",   "type": "answer", "question": "我是电子商务专业的吗？", "expected": "是", "keywords": ["是", "电子商务"]},
+    {"id": 10, "category": "identity",   "type": "answer", "question": "我老家在哪个省？", "expected": "河北", "keywords": ["河北"]},
+
+    {"id": 11, "category": "preference", "type": "answer", "question": "我讨厌什么岗位？", "expected": "运营岗", "keywords": ["运营"]},
+    {"id": 12, "category": "preference", "type": "answer", "question": "我看东西喜欢什么形式？", "expected": "表格对比", "keywords": ["表格"]},
+    {"id": 13, "category": "preference", "type": "answer", "question": "我对长篇解释是什么态度？", "expected": "看不下去，希望简短", "keywords": ["不", "长"]},
+    {"id": 14, "category": "preference", "type": "answer", "question": "我能吃辣吗？", "expected": "不吃辣，微辣也不行", "keywords": ["不吃", "辣"]},
+    {"id": 15, "category": "preference", "type": "answer", "question": "我对早起是什么态度？", "expected": "讨厌早起，能睡到十点最好", "keywords": ["早起", "讨厌"]},
+    {"id": 16, "category": "preference", "type": "answer", "question": "我做界面喜欢用什么颜色？", "expected": "喜欢紫色，但觉得黑白灰更高级", "keywords": ["紫色"]},
+    {"id": 17, "category": "preference", "type": "answer", "question": "我更喜欢表格还是大段文字？", "expected": "表格", "keywords": ["表格"]},
+    {"id": 18, "category": "preference", "type": "answer", "question": "我会考虑运营岗吗？", "expected": "不会，明确排除", "keywords": ["不", "运营"]},
+    {"id": 19, "category": "preference", "type": "answer", "question": "我点菜要注意什么口味？", "expected": "不能吃辣", "keywords": ["辣"]},
+    {"id": 20, "category": "preference", "type": "answer", "question": "我喜欢的界面风格是什么？", "expected": "黑白灰为主，高级感", "keywords": ["黑白灰", "高级"]},
+
+    {"id": 21, "category": "goal",       "type": "answer", "question": "我的求职目标是什么？", "expected": "大厂的大模型或算法岗", "keywords": ["大模型", "算法", "大厂"]},
+    {"id": 22, "category": "goal",       "type": "answer", "question": "我计划什么时候拿到offer？", "expected": "明年三月前", "keywords": ["三月", "3月", "明年"]},
+    {"id": 23, "category": "goal",       "type": "answer", "question": "除了大模型算法，我还在看什么方向？", "expected": "后端开发", "keywords": ["后端"]},
+    {"id": 24, "category": "goal",       "type": "answer", "question": "我最终想做哪个方向的工作？", "expected": "大模型或算法", "keywords": ["大模型", "算法"]},
+    {"id": 25, "category": "goal",       "type": "answer", "question": "我现在最急的事是什么？", "expected": "补项目、找大厂工作", "keywords": ["项目", "offer", "工作"]},
+    {"id": 26, "category": "goal",       "type": "answer", "question": "我对非大厂非算法方向的岗位有兴趣吗？", "expected": "不太考虑，集中在技术方向", "keywords": ["不", "技术"]},
+
+    {"id": 27, "category": "event",      "type": "answer", "question": "我投过哪些公司？", "expected": "字节、腾讯、搜狐", "keywords": ["字节", "腾讯", "搜狐"]},
+    {"id": 28, "category": "event",      "type": "answer", "question": "我投的字节是什么岗位？", "expected": "大模型开发", "keywords": ["大模型"]},
+    {"id": 29, "category": "event",      "type": "answer", "question": "我投的腾讯是什么岗位？", "expected": "后端开发", "keywords": ["后端"]},
+    {"id": 30, "category": "event",      "type": "answer", "question": "搜狐的面试最后怎么样了？", "expected": "二面挂了，后来补录又联系", "keywords": ["二面", "挂", "补录"]},
+    {"id": 31, "category": "event",      "type": "answer", "question": "搜狐二面为什么没过？", "expected": "项目深度不够", "keywords": ["项目", "深度"]},
+    {"id": 32, "category": "event",      "type": "answer", "question": "我什么时候开始做408知识库项目的？", "expected": "10月初", "keywords": ["10月", "十月"]},
+    {"id": 33, "category": "event",      "type": "answer", "question": "llama.cpp 压测的吞吐提升是多少？", "expected": "7.9 提到 20.5，约 2.6 倍", "keywords": ["20.5", "2.6"]},
+    {"id": 34, "category": "event",      "type": "answer", "question": "首字延迟改善到什么程度？", "expected": "37秒降到1.1秒", "keywords": ["1.1", "37"]},
+    {"id": 35, "category": "event",      "type": "answer", "question": "我什么时候发现Ollama并发问题的？", "expected": "10月20日", "keywords": ["10月20"]},
+    {"id": 36, "category": "event",      "type": "answer", "question": "我做过什么推理性能优化？", "expected": "换 llama.cpp 做批处理", "keywords": ["llama.cpp", "批处理"]},
+
+    {"id": 37, "category": "tech",       "type": "answer", "question": "我用的是什么电脑？", "expected": "联想小新16 Pro，无独显，16G内存", "keywords": ["联想", "16"]},
+    {"id": 38, "category": "tech",       "type": "answer", "question": "我的电脑能跑大模型吗？", "expected": "能，靠CPU跑7B", "keywords": ["CPU", "7B"]},
+    {"id": 39, "category": "tech",       "type": "answer", "question": "我平时用什么模型？", "expected": "qwen2.5:7b", "keywords": ["qwen", "7b"]},
+    {"id": 40, "category": "tech",       "type": "answer", "question": "我主要写什么编程语言？", "expected": "Python", "keywords": ["python"]},
+    {"id": 41, "category": "tech",       "type": "answer", "question": "我会前端吗？", "expected": "会一点Vue3", "keywords": ["vue"]},
+    {"id": 42, "category": "tech",       "type": "answer", "question": "我用过哪些本地推理框架？", "expected": "Ollama 和 llama.cpp", "keywords": ["ollama", "llama.cpp"]},
+
+    {"id": 43, "category": "relation",   "type": "answer", "question": "我女朋友做什么工作？", "expected": "做设计", "keywords": ["设计"]},
+    {"id": 44, "category": "relation",   "type": "answer", "question": "我女朋友在哪个城市？", "expected": "北京", "keywords": ["北京"]},
+    {"id": 45, "category": "relation",   "type": "answer", "question": "我周末一般干什么？", "expected": "和女朋友一起吃饭", "keywords": ["女朋友", "吃饭"]},
+    {"id": 46, "category": "relation",   "type": "answer", "question": "女朋友对我的求职状态怎么看？", "expected": "觉得我太焦虑", "keywords": ["焦虑"]},
+    {"id": 47, "category": "relation",   "type": "answer", "question": "我和女朋友在同一个城市吗？", "expected": "都在北京", "keywords": ["北京", "同一"]},
+
+    {"id": 48, "category": "unknown",    "type": "refuse", "question": "我养宠物吗？", "expected": "没有相关记录", "keywords": []},
+    {"id": 49, "category": "unknown",    "type": "refuse", "question": "我的身高是多少？", "expected": "没有相关记录", "keywords": []},
+    {"id": 50, "category": "unknown",    "type": "refuse", "question": "我喜欢听什么音乐？", "expected": "没有相关记录", "keywords": []}
+  ]
+}

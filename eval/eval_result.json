@@ -1,0 +1,1086 @@
+{
+  "total": 50,
+  "correct": 42,
+  "by_category": {
+    "identity": {
+      "correct": 9,
+      "total": 10
+    },
+    "preference": {
+      "correct": 9,
+      "total": 10
+    },
+    "goal": {
+      "correct": 3,
+      "total": 6
+    },
+    "event": {
+      "correct": 9,
+      "total": 10
+    },
+    "tech": {
+      "correct": 5,
+      "total": 6
+    },
+    "relation": {
+      "correct": 4,
+      "total": 5
+    },
+    "unknown": {
+      "correct": 3,
+      "total": 3
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "identity",
+      "type": "answer",
+      "question": "我是哪个学校的什么专业？",
+      "expected": "北京邮电大学电子商务专业，大三",
+      "reply": "你是电子商务专业，所在城市在北京上学。",
+      "refused": false,
+      "intent": "fact",
+      "used_ids": [
+        3,
+        4,
+        1,
+        6,
+        2,
+        25,
+        31,
+        7
+      ],
+      "ok": true
+    },
+    {
+      "id": 2,
+      "category": "identity",
+      "type": "answer",
+      "question": "我家在哪？",
+      "expected": "河北石家庄",
+      "reply": "你的家庭所在地是在河北石家庄。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        2,
+        1,
+        18,
+        4,
+        5,
+        31,
+        27,
+        21
+      ],
+      "ok": true
+    },
+    {
+      "id": 3,
+      "category": "identity",
+      "type": "answer",
+      "question": "我现在在哪个城市上学？",
+      "expected": "北京",
+      "reply": "你在北京上学。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        1,
+        2,
+        18,
+        33,
+        4,
+        5,
+        6,
+        31
+      ],
+      "ok": true
+    },
+    {
+      "id": 4,
+      "category": "identity",
+      "type": "answer",
+      "question": "我读大几？",
+      "expected": "大三",
+      "reply": "你读大三。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        4,
+        1,
+        6,
+        5,
+        31,
+        27,
+        2,
+        3
+      ],
+      "ok": true
+    },
+    {
+      "id": 5,
+      "category": "identity",
+      "type": "answer",
+      "question": "我考研打算考什么方向？",
+      "expected": "计算机为主，金融备选",
+      "reply": "根据你之前说的，你主攻方向是计算机，目标是明年三月前拿到大厂的offer，投递方向是后端开发岗位。因此，你考研可能打算考计算机相关方向，特别是后端开发相关的领域。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        6,
+        31,
+        7,
+        5,
+        4,
+        27,
+        3,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "id": 6,
+      "category": "identity",
+      "type": "answer",
+      "question": "计算机和金融，我更想学哪个？",
+      "expected": "计算机",
+      "reply": "根据你的记忆，你主攻方向是计算机，并且投递方向也是与后端开发相关的工作，因此你可能更倾向于继续深入计算机领域。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        6,
+        16,
+        3,
+        9,
+        4,
+        7,
+        5,
+        27
+      ],
+      "ok": true
+    },
+    {
+      "id": 7,
+      "category": "identity",
+      "type": "answer",
+      "question": "我考研的目标院校是什么层次？",
+      "expected": "985",
+      "reply": "根据记忆中的信息，没有提到考研的目标院校及其层次，因此无法回答这个问题。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        5,
+        31,
+        27,
+        4,
+        6,
+        1,
+        2,
+        18
+      ],
+      "ok": false
+    },
+    {
+      "id": 8,
+      "category": "identity",
+      "type": "answer",
+      "question": "我是什么学历状态？",
+      "expected": "本科在读，大三",
+      "reply": "你是大三学生。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        4,
+        1,
+        6,
+        5,
+        27,
+        31,
+        25,
+        2
+      ],
+      "ok": true
+    },
+    {
+      "id": 9,
+      "category": "identity",
+      "type": "answer",
+      "question": "我是电子商务专业的吗？",
+      "expected": "是",
+      "reply": "是的，你是电子商务专业。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        3,
+        6,
+        4,
+        27,
+        23,
+        16,
+        25,
+        17
+      ],
+      "ok": true
+    },
+    {
+      "id": 10,
+      "category": "identity",
+      "type": "answer",
+      "question": "我老家在哪个省？",
+      "expected": "河北",
+      "reply": "你的记忆中提到“所在城市_家庭：在河北石家庄”，所以你的老家在河北省。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        2,
+        1,
+        4,
+        5,
+        18,
+        6,
+        31,
+        21
+      ],
+      "ok": true
+    },
+    {
+      "id": 11,
+      "category": "preference",
+      "type": "answer",
+      "question": "我讨厌什么岗位？",
+      "expected": "运营岗",
+      "reply": "你特别讨厌运营岗，认为他们太虚了，天天写方案。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        8,
+        22,
+        23,
+        9,
+        19,
+        20,
+        21,
+        5
+      ],
+      "ok": true
+    },
+    {
+      "id": 12,
+      "category": "preference",
+      "type": "answer",
+      "question": "我看东西喜欢什么形式？",
+      "expected": "表格对比",
+      "reply": "你倾向于喜欢表格对比的形式，不喜欢大段文字。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        9,
+        12,
+        16,
+        21,
+        32,
+        27,
+        20,
+        4
+      ],
+      "ok": true
+    },
+    {
+      "id": 13,
+      "category": "preference",
+      "type": "answer",
+      "question": "我对长篇解释是什么态度？",
+      "expected": "看不下去，希望简短",
+      "reply": "你对信息形式的态度是喜欢表格对比，不喜欢大段文字，所以你对长篇解释是不喜欢的。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        9,
+        8,
+        19,
+        20,
+        12,
+        32,
+        22,
+        4
+      ],
+      "ok": true
+    },
+    {
+      "id": 14,
+      "category": "preference",
+      "type": "answer",
+      "question": "我能吃辣吗？",
+      "expected": "不吃辣，微辣也不行",
+      "reply": "不能，你对食物的偏好是不吃辣，一点辣都不行。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        21,
+        20,
+        4,
+        18,
+        22,
+        12,
+        19,
+        17
+      ],
+      "ok": true
+    },
+    {
+      "id": 15,
+      "category": "preference",
+      "type": "answer",
+      "question": "我对早起是什么态度？",
+      "expected": "讨厌早起，能睡到十点最好",
+      "reply": "你天生讨厌早起，能睡到十点最好。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        22,
+        8,
+        9,
+        20,
+        19,
+        32,
+        12,
+        21
+      ],
+      "ok": true
+    },
+    {
+      "id": 16,
+      "category": "preference",
+      "type": "answer",
+      "question": "我做界面喜欢用什么颜色？",
+      "expected": "喜欢紫色，但觉得黑白灰更高级",
+      "reply": "根据记忆中的信息，您对颜色的态度是紫色有质感，但没有明确提到喜欢用什么颜色做界面。不过，考虑到您认为黑白灰更高级，可能在界面设计中更倾向于使用黑白灰这类经典颜色。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        32,
+        9,
+        16,
+        17,
+        14,
+        19,
+        6,
+        15
+      ],
+      "ok": true
+    },
+    {
+      "id": 17,
+      "category": "preference",
+      "type": "answer",
+      "question": "我更喜欢表格还是大段文字？",
+      "expected": "表格",
+      "reply": "你更喜欢表格对比，不喜欢大段文字。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        9,
+        16,
+        4,
+        32,
+        27,
+        14,
+        31,
+        6
+      ],
+      "ok": true
+    },
+    {
+      "id": 18,
+      "category": "preference",
+      "type": "answer",
+      "question": "我会考虑运营岗吗？",
+      "expected": "不会，明确排除",
+      "reply": "不会考虑运营岗，因为你之前明确表示特别讨厌运营岗，觉得他们太虚，天天写方案。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        8,
+        5,
+        27,
+        31,
+        23,
+        7,
+        4,
+        12
+      ],
+      "ok": true
+    },
+    {
+      "id": 19,
+      "category": "preference",
+      "type": "answer",
+      "question": "我点菜要注意什么口味？",
+      "expected": "不能吃辣",
+      "reply": "你点菜时要注意避免选择辣味菜品，因为你不吃辣，一点辣都不行。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        20,
+        21,
+        19,
+        16,
+        32,
+        4,
+        18,
+        5
+      ],
+      "ok": true
+    },
+    {
+      "id": 20,
+      "category": "preference",
+      "type": "answer",
+      "question": "我喜欢的界面风格是什么？",
+      "expected": "黑白灰为主，高级感",
+      "reply": "根据记忆，您偏好紫色有质感的界面风格。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        9,
+        16,
+        32,
+        6,
+        19,
+        17,
+        27,
+        18
+      ],
+      "ok": false
+    },
+    {
+      "id": 21,
+      "category": "goal",
+      "type": "answer",
+      "question": "我的求职目标是什么？",
+      "expected": "大厂的大模型或算法岗",
+      "reply": "你的求职目标是明年三月前拿到大厂的offer。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        5,
+        27,
+        31,
+        4,
+        6,
+        23,
+        25,
+        1
+      ],
+      "ok": false
+    },
+    {
+      "id": 22,
+      "category": "goal",
+      "type": "answer",
+      "question": "我计划什么时候拿到offer？",
+      "expected": "明年三月前",
+      "reply": "你计划在明年三月前拿到大厂的offer。",
+      "refused": false,
+      "intent": "time",
+      "used_ids": [
+        31,
+        25,
+        7,
+        33,
+        5,
+        24,
+        27,
+        4
+      ],
+      "ok": true
+    },
+    {
+      "id": 23,
+      "category": "goal",
+      "type": "answer",
+      "question": "除了大模型算法，我还在看什么方向？",
+      "expected": "后端开发",
+      "reply": "根据你之前投递的方向，除了大模型算法，你还关注后端开发方向。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        31,
+        7,
+        6,
+        11,
+        16,
+        27,
+        5,
+        9
+      ],
+      "ok": true
+    },
+    {
+      "id": 24,
+      "category": "goal",
+      "type": "answer",
+      "question": "我最终想做哪个方向的工作？",
+      "expected": "大模型或算法",
+      "reply": "你主攻的方向是计算机，并且投递的方向是后端开发，所以你最终想做的工作方向是后端开发。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        5,
+        6,
+        31,
+        7,
+        27,
+        16,
+        4,
+        17
+      ],
+      "ok": false
+    },
+    {
+      "id": 25,
+      "category": "goal",
+      "type": "answer",
+      "question": "我现在最急的事是什么？",
+      "expected": "补项目、找大厂工作",
+      "reply": "你现在最急的事是明年三月前拿到大厂的offer。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        5,
+        27,
+        18,
+        33,
+        31,
+        4,
+        19,
+        1
+      ],
+      "ok": false
+    },
+    {
+      "id": 26,
+      "category": "goal",
+      "type": "answer",
+      "question": "我对非大厂非算法方向的岗位有兴趣吗？",
+      "expected": "不太考虑，集中在技术方向",
+      "reply": "根据你的记忆，你主要投递的是字节和腾讯的岗位，且投递的岗位方向是大厂的后端开发。因此，目前看来你对非大厂非算法方向的岗位兴趣不大。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        31,
+        23,
+        6,
+        7,
+        16,
+        5,
+        27,
+        4
+      ],
+      "ok": true
+    },
+    {
+      "id": 27,
+      "category": "event",
+      "type": "answer",
+      "question": "我投过哪些公司？",
+      "expected": "字节、腾讯、搜狐",
+      "reply": "你投递了字节跳动的大模型开发岗和腾讯的后端开发职位。",
+      "refused": false,
+      "intent": "fact",
+      "used_ids": [
+        7,
+        4,
+        27,
+        31,
+        1,
+        5,
+        2,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "id": 28,
+      "category": "event",
+      "type": "answer",
+      "question": "我投的字节是什么岗位？",
+      "expected": "大模型开发",
+      "reply": "你投的是字节的大模型开发岗。",
+      "refused": false,
+      "intent": "fact",
+      "used_ids": [
+        23,
+        7,
+        4,
+        25,
+        27,
+        5,
+        31,
+        6
+      ],
+      "ok": true
+    },
+    {
+      "id": 29,
+      "category": "event",
+      "type": "answer",
+      "question": "我投的腾讯是什么岗位？",
+      "expected": "后端开发",
+      "reply": "你投的是腾讯的后端开发岗位。",
+      "refused": false,
+      "intent": "fact",
+      "used_ids": [
+        23,
+        7,
+        4,
+        25,
+        27,
+        5,
+        33,
+        31
+      ],
+      "ok": true
+    },
+    {
+      "id": 30,
+      "category": "event",
+      "type": "answer",
+      "question": "搜狐的面试最后怎么样了？",
+      "expected": "二面挂了，后来补录又联系",
+      "reply": "搜狐的面试更新情况是：之前二面因项目深度不够被挂，但最近又说可以进行进一步的交流。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        33,
+        24,
+        5,
+        31,
+        23,
+        25,
+        7,
+        27
+      ],
+      "ok": true
+    },
+    {
+      "id": 31,
+      "category": "event",
+      "type": "answer",
+      "question": "搜狐二面为什么没过？",
+      "expected": "项目深度不够",
+      "reply": "二面因项目深度不够被挂。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        24,
+        33,
+        4,
+        5,
+        25,
+        9,
+        21,
+        28
+      ],
+      "ok": true
+    },
+    {
+      "id": 32,
+      "category": "event",
+      "type": "answer",
+      "question": "我什么时候开始做408知识库项目的？",
+      "expected": "10月初",
+      "reply": "记忆中没有关于408知识库项目的具体时间信息。根据现有记忆，最早的相关信息是关于项目深度的问题，但这与408知识库项目无关。",
+      "refused": false,
+      "intent": "time",
+      "used_ids": [
+        25,
+        27,
+        33,
+        7,
+        5,
+        31,
+        4,
+        6
+      ],
+      "ok": false
+    },
+    {
+      "id": 33,
+      "category": "event",
+      "type": "answer",
+      "question": "llama.cpp 压测的吞吐提升是多少？",
+      "expected": "7.9 提到 20.5，约 2.6 倍",
+      "reply": "llama.cpp并发四路吞吐从7.9提到20.5，吞吐提升了2.6倍。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        30,
+        29,
+        11,
+        28,
+        31,
+        13,
+        12,
+        27
+      ],
+      "ok": true
+    },
+    {
+      "id": 34,
+      "category": "event",
+      "type": "answer",
+      "question": "首字延迟改善到什么程度？",
+      "expected": "37秒降到1.1秒",
+      "reply": "首字延迟从37秒降到1.1秒。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        29,
+        30,
+        13,
+        16,
+        28,
+        31,
+        12,
+        5
+      ],
+      "ok": true
+    },
+    {
+      "id": 35,
+      "category": "event",
+      "type": "answer",
+      "question": "我什么时候发现Ollama并发问题的？",
+      "expected": "10月20日",
+      "reply": "你是在2026年10月20日发现Ollama并发问题的，当时四个请求需要排队。",
+      "refused": false,
+      "intent": "time",
+      "used_ids": [
+        28,
+        11,
+        29,
+        30,
+        13,
+        12,
+        19,
+        31
+      ],
+      "ok": true
+    },
+    {
+      "id": 36,
+      "category": "event",
+      "type": "answer",
+      "question": "我做过什么推理性能优化？",
+      "expected": "换 llama.cpp 做批处理",
+      "reply": "你通过优化llama.cpp的代码，使得并发四路吞吐从7.9提升到20.5，提升了2.6倍，并且最慢的首字延迟从37秒降到1.1秒。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        30,
+        29,
+        27,
+        5,
+        31,
+        4,
+        25,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "id": 37,
+      "category": "tech",
+      "type": "answer",
+      "question": "我用的是什么电脑？",
+      "expected": "联想小新16 Pro，无独显，16G内存",
+      "reply": "你用的是联想小新16 Pro，配置为16G内存，没有独显。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        10,
+        6,
+        4,
+        19,
+        9,
+        12,
+        14,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "id": 38,
+      "category": "tech",
+      "type": "answer",
+      "question": "我的电脑能跑大模型吗？",
+      "expected": "能，靠CPU跑7B",
+      "reply": "你的电脑配置为联想小新16 Pro，16G内存，没有独显，根据这条记忆来看，可能无法高效运行大模型，特别是像Ollama跑qwen2.5的7B这样较大的模型。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        7,
+        11,
+        10,
+        12,
+        31,
+        6,
+        15,
+        13
+      ],
+      "ok": true
+    },
+    {
+      "id": 39,
+      "category": "tech",
+      "type": "answer",
+      "question": "我平时用什么模型？",
+      "expected": "qwen2.5:7b",
+      "reply": "你最近使用的是Ollama跑qwen2.5的7B模型。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        7,
+        11,
+        27,
+        9,
+        5,
+        17,
+        21,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "id": 40,
+      "category": "tech",
+      "type": "answer",
+      "question": "我主要写什么编程语言？",
+      "expected": "Python",
+      "reply": "你主要写Python编程语言。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        14,
+        27,
+        6,
+        16,
+        23,
+        17,
+        4,
+        7
+      ],
+      "ok": true
+    },
+    {
+      "id": 41,
+      "category": "tech",
+      "type": "answer",
+      "question": "我会前端吗？",
+      "expected": "会一点Vue3",
+      "reply": "你会一点Vue3，所以你在前端技术方面有一些基础。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        15,
+        16,
+        23,
+        6,
+        7,
+        27,
+        25,
+        17
+      ],
+      "ok": true
+    },
+    {
+      "id": 42,
+      "category": "tech",
+      "type": "answer",
+      "question": "我用过哪些本地推理框架？",
+      "expected": "Ollama 和 llama.cpp",
+      "reply": "根据记忆中的信息，没有提到您使用过哪些本地推理框架。",
+      "refused": false,
+      "intent": "fact",
+      "used_ids": [
+        2,
+        7,
+        5,
+        27,
+        25,
+        16,
+        13,
+        14
+      ],
+      "ok": false
+    },
+    {
+      "id": 43,
+      "category": "relation",
+      "type": "answer",
+      "question": "我女朋友做什么工作？",
+      "expected": "做设计",
+      "reply": "我女朋友做设计工作。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        5,
+        17,
+        18,
+        19,
+        27,
+        4,
+        23,
+        8
+      ],
+      "ok": true
+    },
+    {
+      "id": 44,
+      "category": "relation",
+      "type": "answer",
+      "question": "我女朋友在哪个城市？",
+      "expected": "北京",
+      "reply": "我女朋友在北京。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        1,
+        2,
+        18,
+        17,
+        19,
+        4,
+        5,
+        23
+      ],
+      "ok": true
+    },
+    {
+      "id": 45,
+      "category": "relation",
+      "type": "answer",
+      "question": "我周末一般干什么？",
+      "expected": "和女朋友一起吃饭",
+      "reply": "记忆里没有关于您周末活动的具体信息，无法回答这个问题。根据您提供的记忆，主要关注的是项目、工作目标、学习进度和个人偏好等方面的信息。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        27,
+        18,
+        5,
+        2,
+        4,
+        17,
+        9,
+        31
+      ],
+      "ok": false
+    },
+    {
+      "id": 46,
+      "category": "relation",
+      "type": "answer",
+      "question": "女朋友对我的求职状态怎么看？",
+      "expected": "觉得我太焦虑",
+      "reply": "女朋友认为你太焦虑，这可能与你明年找工作的目标有关。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        18,
+        17,
+        19,
+        5,
+        4,
+        12,
+        27,
+        9
+      ],
+      "ok": true
+    },
+    {
+      "id": 47,
+      "category": "relation",
+      "type": "answer",
+      "question": "我和女朋友在同一个城市吗？",
+      "expected": "都在北京",
+      "reply": "你们不在同一个城市，你的女朋友在北京，而你所在的城市是石家庄。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        2,
+        1,
+        18,
+        17,
+        19,
+        4,
+        25,
+        5
+      ],
+      "ok": true
+    },
+    {
+      "id": 48,
+      "category": "unknown",
+      "type": "refuse",
+      "question": "我养宠物吗？",
+      "expected": "没有相关记录",
+      "reply": "根据记忆中的信息，没有提到你是否养宠物，所以无法回答你是否养宠物。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        21,
+        20,
+        19,
+        4,
+        18,
+        22,
+        27,
+        17
+      ],
+      "ok": true
+    },
+    {
+      "id": 49,
+      "category": "unknown",
+      "type": "refuse",
+      "question": "我的身高是多少？",
+      "expected": "没有相关记录",
+      "reply": "记忆里没有关于身高的信息。",
+      "refused": false,
+      "intent": "semantic",
+      "used_ids": [
+        4,
+        5,
+        18,
+        27,
+        21,
+        17,
+        9,
+        6
+      ],
+      "ok": true
+    },
+    {
+      "id": 50,
+      "category": "unknown",
+      "type": "refuse",
+      "question": "我喜欢听什么音乐？",
+      "expected": "没有相关记录",
+      "reply": "根据记忆中的信息，没有提到您喜欢听什么音乐，因此无法回答这个问题。",
+      "refused": false,
+      "intent": "preference",
+      "used_ids": [
+        9,
+        21,
+        6,
+        4,
+        27,
+        20,
+        18,
+        32
+      ],
+      "ok": true
+    }
+  ]
+}
