@@ -65,10 +65,11 @@ def _keywords(question):
     return keys
 
 
-def retrieve(conn, question, intent=None, top_k=8, budget=1200, min_score=0.008):
+def retrieve(conn, question, intent=None, top_k=8, budget=1200, min_score=0.008,
+             use_keywords=True, use_base=True, use_rrf=True):
     """三路召回（向量 / 关键词 / 保留分）+ RRF 融合，按意图做类别加权。
 
-    RRF 的好处是三路各取前 40 名再融合，关键词噪声不会把语义正确的条目挤掉。
+    use_keywords / use_base / use_rrf 三个开关用于消融实验，默认全开即线上行为。
     """
     from collections import defaultdict
 
@@ -107,10 +108,19 @@ def retrieve(conn, question, intent=None, top_k=8, budget=1200, min_score=0.008)
             key_list.append((kh, r["id"]))
 
     rrf = defaultdict(float)
-    for lst in (sim_list, key_list):
-        lst.sort(key=lambda x: x[0], reverse=True)
-        for rank, (sc, rid) in enumerate(lst[:15]):
-            rrf[rid] += 1.0 / (60.0 + rank)
+    lists = [sim_list] + ([key_list] if use_keywords else [])
+    if use_rrf:
+        for lst in lists:
+            lst.sort(key=lambda x: x[0], reverse=True)
+            for rank, (sc, rid) in enumerate(lst[:15]):
+                rrf[rid] += 1.0 / (60.0 + rank)
+    else:
+        # 消融：不融合，直接取各路原始分（向量路权重更高，因为它是主路）
+        for sc, rid in sim_list:
+            rrf[rid] = max(rrf[rid], sc * 100.0)
+        if use_keywords:
+            for sc, rid in key_list:
+                rrf[rid] = max(rrf[rid], sc * 10.0)
 
     row_by_id = {r["id"]: r for r in all_rows}
     scored = []
@@ -124,7 +134,8 @@ def retrieve(conn, question, intent=None, top_k=8, budget=1200, min_score=0.008)
             boost = 1.15
         elif intent == "fact" and cat in ("event", "identity"):
             boost = 1.10
-        scored.append((val * boost * (1 + 0.15 * base_of[rid]), r))
+        base_factor = (1 + 0.15 * base_of[rid]) if use_base else 1.0
+        scored.append((val * boost * base_factor, r))
 
     scored.sort(key=lambda x: x[0], reverse=True)
 
@@ -168,8 +179,8 @@ ANSWER_PROMPT = """你是记忆问答助手。下面是关于用户的历史记�
 """
 
 
-def answer(conn, question, budget=1200):
-    picked, intent, hit = retrieve(conn, question, budget=budget)
+def answer(conn, question, budget=1200, **flags):
+    picked, intent, hit = retrieve(conn, question, budget=budget, **flags)
     if not hit:
         return {"answer": REFUSE_REPLY, "intent": intent, "used": [], "refused": True}
 

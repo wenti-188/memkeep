@@ -1,0 +1,11 @@
+frontend/node_modules/
+frontend/dist/
+storage/memory.db
+storage/*.db
+*.png
+*.log
+__pycache__/
+.pytest_cache/
+.git/
+.eval_result.json
+eval/eval_result.json

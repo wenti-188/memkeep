@@ -1,0 +1,1093 @@
+{
+  "limit": 50,
+  "summary": {
+    "A_全历史直塞": {
+      "accuracy": 80.0,
+      "correct": 40,
+      "total": 50,
+      "avg_latency_ms": 2609,
+      "avg_ctx_chars": 859
+    },
+    "B_纯向量top5": {
+      "accuracy": 84.0,
+      "correct": 42,
+      "total": 50,
+      "avg_latency_ms": 4745,
+      "avg_ctx_chars": 109
+    },
+    "C_MemKeep混合": {
+      "accuracy": 84.0,
+      "correct": 42,
+      "total": 50,
+      "avg_latency_ms": 6060,
+      "avg_ctx_chars": 99
+    }
+  },
+  "details": [
+    {
+      "arm": "A_全历史直塞",
+      "cases": [
+        {
+          "id": 1,
+          "ok": true,
+          "reply": "你在学习电子商务专业。",
+          "latency_ms": 1117,
+          "ctx_chars": 859
+        },
+        {
+          "id": 2,
+          "ok": true,
+          "reply": "您的家庭所在地在河北石家庄。",
+          "latency_ms": 1223,
+          "ctx_chars": 859
+        },
+        {
+          "id": 3,
+          "ok": true,
+          "reply": "你在北京上学。",
+          "latency_ms": 953,
+          "ctx_chars": 859
+        },
+        {
+          "id": 4,
+          "ok": true,
+          "reply": "你读大三。",
+          "latency_ms": 1045,
+          "ctx_chars": 859
+        },
+        {
+          "id": 5,
+          "ok": false,
+          "reply": "根据您的记忆条目，您没有提到考研的相关信息，因此无法确定您打算考研考什么方向。如果您有相关计划，可以提供更多信息，我会尽力帮助您。",
+          "latency_ms": 5149,
+          "ctx_chars": 859
+        },
+        {
+          "id": 6,
+          "ok": true,
+          "reply": "根据你的记忆条目，你目前更倾向于后端开发方向，并且目标是大厂的后端开发岗位，这表明你在计算机领域有较强的倾向性。因此，你可能更想学计算机而不是金融。",
+          "latency_ms": 6536,
+          "ctx_chars": 859
+        },
+        {
+          "id": 7,
+          "ok": false,
+          "reply": "根据提供的记忆条目，我没有找到关于考研目标院校的信息，因此无法回答您的问题。",
+          "latency_ms": 2898,
+          "ctx_chars": 859
+        },
+        {
+          "id": 8,
+          "ok": true,
+          "reply": "你是大三学生。",
+          "latency_ms": 1015,
+          "ctx_chars": 859
+        },
+        {
+          "id": 9,
+          "ok": true,
+          "reply": "是的，你是电子商务专业。",
+          "latency_ms": 1308,
+          "ctx_chars": 859
+        },
+        {
+          "id": 10,
+          "ok": true,
+          "reply": "你的老家在河北省石家庄市。",
+          "latency_ms": 1337,
+          "ctx_chars": 859
+        },
+        {
+          "id": 11,
+          "ok": true,
+          "reply": "你特别讨厌运营岗，认为太虚了，天天写方案。",
+          "latency_ms": 2277,
+          "ctx_chars": 859
+        },
+        {
+          "id": 12,
+          "ok": true,
+          "reply": "你偏好表格对比的形式，不喜欢大段文字。",
+          "latency_ms": 1854,
+          "ctx_chars": 859
+        },
+        {
+          "id": 13,
+          "ok": true,
+          "reply": "你不喜欢大段文字，更偏好表格对比。",
+          "latency_ms": 1810,
+          "ctx_chars": 859
+        },
+        {
+          "id": 14,
+          "ok": true,
+          "reply": "你不能吃辣，一点辣都不行。",
+          "latency_ms": 1641,
+          "ctx_chars": 859
+        },
+        {
+          "id": 15,
+          "ok": true,
+          "reply": "你天生讨厌早起，能睡到十点最好。",
+          "latency_ms": 2019,
+          "ctx_chars": 859
+        },
+        {
+          "id": 16,
+          "ok": true,
+          "reply": "你偏好紫色有质感，或者觉得黑白灰更高级一些。",
+          "latency_ms": 2182,
+          "ctx_chars": 859
+        },
+        {
+          "id": 17,
+          "ok": true,
+          "reply": "你更喜欢表格对比，不喜欢大段文字。",
+          "latency_ms": 1828,
+          "ctx_chars": 859
+        },
+        {
+          "id": 18,
+          "ok": true,
+          "reply": "你特别讨厌运营岗，认为太虚了，天天写方案，所以不会考虑运营岗。",
+          "latency_ms": 3030,
+          "ctx_chars": 859
+        },
+        {
+          "id": 19,
+          "ok": true,
+          "reply": "你不喜欢吃辣，点菜时要注意避免选择辣味菜品。",
+          "latency_ms": 2242,
+          "ctx_chars": 859
+        },
+        {
+          "id": 20,
+          "ok": true,
+          "reply": "你喜欢的界面风格是紫色有质感，黑白灰更高级。",
+          "latency_ms": 2167,
+          "ctx_chars": 859
+        },
+        {
+          "id": 21,
+          "ok": false,
+          "reply": "你的求职目标是明年三月前拿到大厂的后端开发offer。",
+          "latency_ms": 2541,
+          "ctx_chars": 859
+        },
+        {
+          "id": 22,
+          "ok": true,
+          "reply": "你计划在明年三月前拿到大厂的offer。",
+          "latency_ms": 2027,
+          "ctx_chars": 859
+        },
+        {
+          "id": 23,
+          "ok": true,
+          "reply": "除了大模型算法，你还在关注后端开发方向。",
+          "latency_ms": 2098,
+          "ctx_chars": 859
+        },
+        {
+          "id": 24,
+          "ok": false,
+          "reply": "你最终想从事后端开发方向的工作。",
+          "latency_ms": 1681,
+          "ctx_chars": 859
+        },
+        {
+          "id": 25,
+          "ok": false,
+          "reply": "你现在最急的事是明年三月前拿到大厂的offer。",
+          "latency_ms": 2255,
+          "ctx_chars": 859
+        },
+        {
+          "id": 26,
+          "ok": false,
+          "reply": "根据你的记忆条目，你主要关注的是后端开发岗位，并且目标是拿到大厂的offer，目前没有提到对非大厂或非算法方向岗位的兴趣。",
+          "latency_ms": 5293,
+          "ctx_chars": 859
+        },
+        {
+          "id": 27,
+          "ok": true,
+          "reply": "你投过字节跳动的大模型开发岗和腾讯的后端开发岗位。",
+          "latency_ms": 2824,
+          "ctx_chars": 859
+        },
+        {
+          "id": 28,
+          "ok": true,
+          "reply": "你投的是字节的大模型开发岗。",
+          "latency_ms": 1672,
+          "ctx_chars": 859
+        },
+        {
+          "id": 29,
+          "ok": true,
+          "reply": "你投了腾讯的后端开发岗位。",
+          "latency_ms": 1620,
+          "ctx_chars": 859
+        },
+        {
+          "id": 30,
+          "ok": true,
+          "reply": "搜狐的面试结果是：[2026-11-18] 之前挂了，现在又说可以聊（此前：[2026-09-20] 二面因项目深度不够被挂）。",
+          "latency_ms": 7201,
+          "ctx_chars": 859
+        },
+        {
+          "id": 31,
+          "ok": true,
+          "reply": "搜狐二面因项目深度不够被挂。",
+          "latency_ms": 1746,
+          "ctx_chars": 859
+        },
+        {
+          "id": 32,
+          "ok": false,
+          "reply": "记忆中没有关于408知识库项目的具体信息。",
+          "latency_ms": 2061,
+          "ctx_chars": 859
+        },
+        {
+          "id": 33,
+          "ok": true,
+          "reply": "llama.cpp并发四路吞吐从7.9提到20.5，提升2.6倍。",
+          "latency_ms": 3566,
+          "ctx_chars": 859
+        },
+        {
+          "id": 34,
+          "ok": true,
+          "reply": "首字延迟从37秒降到1.1秒。",
+          "latency_ms": 2124,
+          "ctx_chars": 859
+        },
+        {
+          "id": 35,
+          "ok": true,
+          "reply": "你是在2026年10月20日发现Ollama并发问题的。",
+          "latency_ms": 3230,
+          "ctx_chars": 859
+        },
+        {
+          "id": 36,
+          "ok": true,
+          "reply": "你优化了llama.cpp的并发性能，吞吐量从7.9提升到20.5，提升了2.6倍，并且将最慢的首字延迟从37秒降到1.1秒。",
+          "latency_ms": 7601,
+          "ctx_chars": 859
+        },
+        {
+          "id": 37,
+          "ok": true,
+          "reply": "你用的是联想小新16 Pro，配置为16G内存，没有独显。",
+          "latency_ms": 3030,
+          "ctx_chars": 859
+        },
+        {
+          "id": 38,
+          "ok": false,
+          "reply": "你的电脑配置可能不足以流畅运行大模型，联想小新16 Pro虽然性能不错，但没有独显，可能会在运行大模型时遇到性能瓶颈。建议可以考虑升级硬件或选择更轻量级的模型。",
+          "latency_ms": 6708,
+          "ctx_chars": 859
+        },
+        {
+          "id": 39,
+          "ok": true,
+          "reply": "你平时使用的是Ollama跑qwen2.5的7B模型。",
+          "latency_ms": 2703,
+          "ctx_chars": 859
+        },
+        {
+          "id": 40,
+          "ok": true,
+          "reply": "你主要写Python。",
+          "latency_ms": 1073,
+          "ctx_chars": 859
+        },
+        {
+          "id": 41,
+          "ok": true,
+          "reply": "你会一点Vue3，但主要写Python，偏向后端开发。",
+          "latency_ms": 2303,
+          "ctx_chars": 859
+        },
+        {
+          "id": 42,
+          "ok": true,
+          "reply": "您使用过llama.cpp这个本地推理框架。",
+          "latency_ms": 1907,
+          "ctx_chars": 859
+        },
+        {
+          "id": 43,
+          "ok": true,
+          "reply": "你的女朋友在北京做设计工作。",
+          "latency_ms": 1257,
+          "ctx_chars": 859
+        },
+        {
+          "id": 44,
+          "ok": true,
+          "reply": "你的女朋友在北京。",
+          "latency_ms": 886,
+          "ctx_chars": 859
+        },
+        {
+          "id": 45,
+          "ok": false,
+          "reply": "根据提供的记忆信息，没有直接提到您周末通常做什么，但可以推测您可能更倾向于在周末放松，因为您提到天生讨厌早起，希望能睡到十点。不过具体周末活动没有记录。",
+          "latency_ms": 6070,
+          "ctx_chars": 859
+        },
+        {
+          "id": 46,
+          "ok": true,
+          "reply": "女朋友认为你太焦虑，并且对你的求职状态不太满意。",
+          "latency_ms": 2148,
+          "ctx_chars": 859
+        },
+        {
+          "id": 47,
+          "ok": true,
+          "reply": "是的，你们都在北京。",
+          "latency_ms": 1294,
+          "ctx_chars": 859
+        },
+        {
+          "id": 48,
+          "ok": true,
+          "reply": "根据提供的记忆信息，没有提到您是否养宠物，因此无法回答您是否养宠物。",
+          "latency_ms": 2911,
+          "ctx_chars": 859
+        },
+        {
+          "id": 49,
+          "ok": false,
+          "reply": "很抱歉，您的身高信息不在我的记忆条目中。",
+          "latency_ms": 1970,
+          "ctx_chars": 859
+        },
+        {
+          "id": 50,
+          "ok": true,
+          "reply": "很抱歉，您的记忆条目中并没有提到您喜欢听什么音乐，因此无法回答这个问题。",
+          "latency_ms": 3050,
+          "ctx_chars": 859
+        }
+      ]
+    },
+    {
+      "arm": "B_纯向量top5",
+      "cases": [
+        {
+          "id": 1,
+          "ok": true,
+          "reply": "您是北京的一所大学电子商务专业的学生。",
+          "latency_ms": 2873,
+          "ctx_chars": 69
+        },
+        {
+          "id": 2,
+          "ok": true,
+          "reply": "您的家在河北石家庄。",
+          "latency_ms": 2444,
+          "ctx_chars": 64
+        },
+        {
+          "id": 3,
+          "ok": true,
+          "reply": "你现在在北京上学。",
+          "latency_ms": 2257,
+          "ctx_chars": 64
+        },
+        {
+          "id": 4,
+          "ok": true,
+          "reply": "你读大三。",
+          "latency_ms": 2414,
+          "ctx_chars": 68
+        },
+        {
+          "id": 5,
+          "ok": true,
+          "reply": "根据你的记忆，你主攻方向是计算机，所以你考研可能会考虑计算机方向。",
+          "latency_ms": 4454,
+          "ctx_chars": 74
+        },
+        {
+          "id": 6,
+          "ok": true,
+          "reply": "根据你的记忆，你主攻方向是计算机，并且投递了字节的大模型开发岗和腾讯的后端开发岗位，说明你在计算机领域有较强的倾向和兴趣。因此，你可能更倾向于学习计算机。",
+          "latency_ms": 8053,
+          "ctx_chars": 100
+        },
+        {
+          "id": 7,
+          "ok": false,
+          "reply": "根据您提供的记忆条目，我没有关于考研目标院校的信息，无法回答您的问题。您的目标方向是计算机，目标是明年找工作，并希望在简历中有一个项目作为亮点。如果您有具体的考研目标院校信息，可以告诉我，我会尽力帮助您。",
+          "latency_ms": 8312,
+          "ctx_chars": 74
+        },
+        {
+          "id": 8,
+          "ok": true,
+          "reply": "你是大三学生。",
+          "latency_ms": 1959,
+          "ctx_chars": 80
+        },
+        {
+          "id": 9,
+          "ok": true,
+          "reply": "是的，你是电子商务专业的。",
+          "latency_ms": 3091,
+          "ctx_chars": 87
+        },
+        {
+          "id": 10,
+          "ok": true,
+          "reply": "您的老家在河北。",
+          "latency_ms": 1664,
+          "ctx_chars": 64
+        },
+        {
+          "id": 11,
+          "ok": true,
+          "reply": "你特别讨厌运营岗，认为他们太虚了，天天写方案。",
+          "latency_ms": 5476,
+          "ctx_chars": 128
+        },
+        {
+          "id": 12,
+          "ok": true,
+          "reply": "您喜欢使用表格对比的形式来看东西。",
+          "latency_ms": 1974,
+          "ctx_chars": 116
+        },
+        {
+          "id": 13,
+          "ok": true,
+          "reply": "您不喜欢大段文字，偏好表格对比。",
+          "latency_ms": 2922,
+          "ctx_chars": 120
+        },
+        {
+          "id": 14,
+          "ok": true,
+          "reply": "你不能吃辣，一点辣都不行。",
+          "latency_ms": 2886,
+          "ctx_chars": 97
+        },
+        {
+          "id": 15,
+          "ok": true,
+          "reply": "你天生讨厌早起，能睡到十点最好。",
+          "latency_ms": 4022,
+          "ctx_chars": 113
+        },
+        {
+          "id": 16,
+          "ok": true,
+          "reply": "根据你的记忆，你对颜色的态度是紫色有质感，但没有明确提到你喜欢用紫色做界面颜色，黑白灰更高级可能更符合你的偏好。所以，你可能更倾向于使用黑白灰这样的颜色来做界面。",
+          "latency_ms": 7796,
+          "ctx_chars": 88
+        },
+        {
+          "id": 17,
+          "ok": true,
+          "reply": "您更喜欢表格对比，不喜欢大段文字。",
+          "latency_ms": 3761,
+          "ctx_chars": 122
+        },
+        {
+          "id": 18,
+          "ok": true,
+          "reply": "你特别讨厌运营岗，觉得他们太虚，天天写方案，所以你不会考虑运营岗。",
+          "latency_ms": 5212,
+          "ctx_chars": 123
+        },
+        {
+          "id": 19,
+          "ok": true,
+          "reply": "你点菜时要注意避免选择辣味菜品。",
+          "latency_ms": 2522,
+          "ctx_chars": 89
+        },
+        {
+          "id": 20,
+          "ok": true,
+          "reply": "您喜欢的界面风格是紫色有质感的风格，同时也偏好黑白灰更高级的风格。",
+          "latency_ms": 4374,
+          "ctx_chars": 107
+        },
+        {
+          "id": 21,
+          "ok": false,
+          "reply": "你的求职目标是在明年三月前拿到大厂的offer。",
+          "latency_ms": 3674,
+          "ctx_chars": 74
+        },
+        {
+          "id": 22,
+          "ok": true,
+          "reply": "你计划在明年三月前拿到大厂的offer。",
+          "latency_ms": 3905,
+          "ctx_chars": 98
+        },
+        {
+          "id": 23,
+          "ok": true,
+          "reply": "除了大模型算法，你还在关注后端开发方向。",
+          "latency_ms": 4201,
+          "ctx_chars": 107
+        },
+        {
+          "id": 24,
+          "ok": true,
+          "reply": "你最终想做的是大厂的后端开发或大模型开发方向的工作。",
+          "latency_ms": 4915,
+          "ctx_chars": 106
+        },
+        {
+          "id": 25,
+          "ok": false,
+          "reply": "你现在最急的事是明年三月前拿到大厂的offer。",
+          "latency_ms": 4105,
+          "ctx_chars": 84
+        },
+        {
+          "id": 26,
+          "ok": true,
+          "reply": "根据你的记忆条目，你主要投递的是字节和腾讯的岗位，且投递的方向是大模型开发岗和后端开发，这表明你目前的兴趣偏向于大厂和后端开发方向。因此，你对非大厂非算法方向的岗位可能兴趣不大。",
+          "latency_ms": 10000,
+          "ctx_chars": 107
+        },
+        {
+          "id": 27,
+          "ok": true,
+          "reply": "你投递了字节跳动的大模型开发岗和腾讯的后端开发职位。",
+          "latency_ms": 4183,
+          "ctx_chars": 103
+        },
+        {
+          "id": 28,
+          "ok": true,
+          "reply": "你投的是字节的大模型开发岗。",
+          "latency_ms": 3448,
+          "ctx_chars": 108
+        },
+        {
+          "id": 29,
+          "ok": true,
+          "reply": "你投的是腾讯的后端开发岗位。",
+          "latency_ms": 3180,
+          "ctx_chars": 120
+        },
+        {
+          "id": 30,
+          "ok": false,
+          "reply": "搜狐的面试在2026年11月18日之前被挂起，但后来又通知可以进行进一步的沟通。",
+          "latency_ms": 7608,
+          "ctx_chars": 180
+        },
+        {
+          "id": 31,
+          "ok": true,
+          "reply": "搜狐二面没过是因为项目深度不够，简历上只有课程设计的经历，不够丰富。",
+          "latency_ms": 6555,
+          "ctx_chars": 148
+        },
+        {
+          "id": 32,
+          "ok": false,
+          "reply": "根据您的记忆条目，没有具体提到您何时开始做408知识库项目，只知道项目深度不够，仅在2026年9月20日被评价为太浅，简历上就一个课设。",
+          "latency_ms": 8522,
+          "ctx_chars": 98
+        },
+        {
+          "id": 33,
+          "ok": true,
+          "reply": "llama.cpp压测的吞吐从7.9提升到20.5，吞吐提升了2.6倍。",
+          "latency_ms": 8601,
+          "ctx_chars": 252
+        },
+        {
+          "id": 34,
+          "ok": true,
+          "reply": "首字延迟从37秒降到1.1秒。",
+          "latency_ms": 6526,
+          "ctx_chars": 253
+        },
+        {
+          "id": 35,
+          "ok": true,
+          "reply": "您是在2026年10月20日发现Ollama并发问题的，四个请求需要排队。",
+          "latency_ms": 8234,
+          "ctx_chars": 236
+        },
+        {
+          "id": 36,
+          "ok": true,
+          "reply": "你优化了llama.cpp的推理性能，使其并发四路吞吐从7.9提升到20.5，提升了2.6倍；最慢的首字延迟从37秒降到1.1秒。",
+          "latency_ms": 10264,
+          "ctx_chars": 196
+        },
+        {
+          "id": 37,
+          "ok": true,
+          "reply": "您使用的是联想小新16 Pro，配置为16G内存，没有独显。",
+          "latency_ms": 5317,
+          "ctx_chars": 113
+        },
+        {
+          "id": 38,
+          "ok": true,
+          "reply": "你的电脑配置为联想小新16 Pro，16G内存，没有独显，运行速度为7-8 token每秒，可能无法流畅运行如qwen2.5的7B这样的大模型。",
+          "latency_ms": 9694,
+          "ctx_chars": 186
+        },
+        {
+          "id": 39,
+          "ok": true,
+          "reply": "你平时使用的模型是Ollama跑qwen2.5的7B。",
+          "latency_ms": 5071,
+          "ctx_chars": 134
+        },
+        {
+          "id": 40,
+          "ok": true,
+          "reply": "你主要写Python编程语言。",
+          "latency_ms": 3209,
+          "ctx_chars": 101
+        },
+        {
+          "id": 41,
+          "ok": true,
+          "reply": "你会一点Vue3前端技术。",
+          "latency_ms": 3609,
+          "ctx_chars": 114
+        },
+        {
+          "id": 42,
+          "ok": false,
+          "reply": "根据您的记忆条目，您没有提到使用过任何本地推理框架。",
+          "latency_ms": 4363,
+          "ctx_chars": 101
+        },
+        {
+          "id": 43,
+          "ok": true,
+          "reply": "你的女朋友是一名设计师。",
+          "latency_ms": 3221,
+          "ctx_chars": 70
+        },
+        {
+          "id": 44,
+          "ok": true,
+          "reply": "你的女朋友在北京。",
+          "latency_ms": 2569,
+          "ctx_chars": 73
+        },
+        {
+          "id": 45,
+          "ok": false,
+          "reply": "根据提供的记忆信息，无法直接得知你周末一般干什么。这些记忆条目没有提到你周末的活动安排。",
+          "latency_ms": 5029,
+          "ctx_chars": 74
+        },
+        {
+          "id": 46,
+          "ok": true,
+          "reply": "女朋友认为你太焦虑，并且对你的求职状态持关注态度。",
+          "latency_ms": 3438,
+          "ctx_chars": 88
+        },
+        {
+          "id": 47,
+          "ok": true,
+          "reply": "你们不在同一个城市，你的女友在北京，而你所在的家庭在河北石家庄。",
+          "latency_ms": 3754,
+          "ctx_chars": 73
+        },
+        {
+          "id": 48,
+          "ok": false,
+          "reply": "根据提供的记忆条目，无法得知您是否养宠物。",
+          "latency_ms": 2997,
+          "ctx_chars": 76
+        },
+        {
+          "id": 49,
+          "ok": true,
+          "reply": "很抱歉，关于您的身高，我的记忆中没有相关信息。",
+          "latency_ms": 3370,
+          "ctx_chars": 73
+        },
+        {
+          "id": 50,
+          "ok": true,
+          "reply": "很抱歉，根据您提供的记忆条目，我没有关于您喜欢听什么音乐的信息。您可以告诉我您喜欢的音乐类型吗？",
+          "latency_ms": 5234,
+          "ctx_chars": 86
+        }
+      ]
+    },
+    {
+      "arm": "C_MemKeep混合",
+      "cases": [
+        {
+          "id": 1,
+          "ok": true,
+          "reply": "你是电子商务专业，所在城市在北京上学。",
+          "latency_ms": 1364,
+          "ctx_chars": 95
+        },
+        {
+          "id": 2,
+          "ok": true,
+          "reply": "你的所在城市是河北石家庄。",
+          "latency_ms": 1102,
+          "ctx_chars": 58
+        },
+        {
+          "id": 3,
+          "ok": true,
+          "reply": "你在北京上学。",
+          "latency_ms": 769,
+          "ctx_chars": 92
+        },
+        {
+          "id": 4,
+          "ok": true,
+          "reply": "你读大三。",
+          "latency_ms": 4343,
+          "ctx_chars": 55
+        },
+        {
+          "id": 5,
+          "ok": true,
+          "reply": "根据你之前说的，你主攻方向是计算机，目标是明年三月前拿到大厂的offer，投递方向是后端开发岗位。因此，你考研可能打算考计算机相关方向，特别是后端开发方向。",
+          "latency_ms": 6678,
+          "ctx_chars": 80
+        },
+        {
+          "id": 6,
+          "ok": true,
+          "reply": "根据你的记忆，你主攻方向是计算机，并且投递方向也是与后端开发相关的工作，所以你更倾向于计算机方向。",
+          "latency_ms": 3985,
+          "ctx_chars": 79
+        },
+        {
+          "id": 7,
+          "ok": false,
+          "reply": "根据记忆中的信息，我没有关于考研目标院校层次的相关条目。记忆中提到的目标是明年找工作，并且希望三月前拿到大厂的offer，但没有提及考研的相关信息。",
+          "latency_ms": 5305,
+          "ctx_chars": 51
+        },
+        {
+          "id": 8,
+          "ok": true,
+          "reply": "你是大三学生。",
+          "latency_ms": 5247,
+          "ctx_chars": 75
+        },
+        {
+          "id": 9,
+          "ok": true,
+          "reply": "是的，你是电子商务专业。",
+          "latency_ms": 1114,
+          "ctx_chars": 61
+        },
+        {
+          "id": 10,
+          "ok": true,
+          "reply": "你的记忆中提到“所在城市_家庭：在河北石家庄”，所以你的老家在河北省。",
+          "latency_ms": 6112,
+          "ctx_chars": 48
+        },
+        {
+          "id": 11,
+          "ok": true,
+          "reply": "你特别讨厌运营岗，认为他们太虚了，天天写方案。",
+          "latency_ms": 2272,
+          "ctx_chars": 81
+        },
+        {
+          "id": 12,
+          "ok": true,
+          "reply": "你倾向于喜欢表格对比的形式，不喜欢大段文字。",
+          "latency_ms": 6586,
+          "ctx_chars": 90
+        },
+        {
+          "id": 13,
+          "ok": true,
+          "reply": "你对信息形式的态度是喜欢表格对比，不喜欢大段文字，所以你对长篇解释的态度是不喜欢。",
+          "latency_ms": 3387,
+          "ctx_chars": 101
+        },
+        {
+          "id": 14,
+          "ok": true,
+          "reply": "不能，你对食物的偏好是不吃辣，一点辣都不行。",
+          "latency_ms": 6945,
+          "ctx_chars": 73
+        },
+        {
+          "id": 15,
+          "ok": true,
+          "reply": "你天生讨厌早起，能睡到十点最好。",
+          "latency_ms": 1843,
+          "ctx_chars": 109
+        },
+        {
+          "id": 16,
+          "ok": true,
+          "reply": "根据记忆中的信息，您对颜色的态度是紫色有质感，但没有明确提到喜欢用什么颜色做界面。不过，如果需要选择，可以参考您对紫色的态度。",
+          "latency_ms": 5028,
+          "ctx_chars": 59
+        },
+        {
+          "id": 17,
+          "ok": true,
+          "reply": "你更喜欢表格对比，不喜欢大段文字。",
+          "latency_ms": 1625,
+          "ctx_chars": 72
+        },
+        {
+          "id": 18,
+          "ok": true,
+          "reply": "不会考虑运营岗，因为你之前表示特别讨厌运营岗，觉得他们太虚，天天写方案。",
+          "latency_ms": 3095,
+          "ctx_chars": 113
+        },
+        {
+          "id": 19,
+          "ok": true,
+          "reply": "你点菜时要注意避免选择辣味菜品，因为你不吃辣，一点辣都不行。",
+          "latency_ms": 6019,
+          "ctx_chars": 52
+        },
+        {
+          "id": 20,
+          "ok": false,
+          "reply": "您偏好紫色有质感的界面风格。",
+          "latency_ms": 5160,
+          "ctx_chars": 58
+        },
+        {
+          "id": 21,
+          "ok": false,
+          "reply": "你的求职目标是明年三月前拿到大厂的offer。",
+          "latency_ms": 6305,
+          "ctx_chars": 73
+        },
+        {
+          "id": 22,
+          "ok": true,
+          "reply": "你计划在明年三月前拿到大厂的offer。",
+          "latency_ms": 8143,
+          "ctx_chars": 166
+        },
+        {
+          "id": 23,
+          "ok": true,
+          "reply": "根据你的记忆，你还在关注后端开发方向。",
+          "latency_ms": 6407,
+          "ctx_chars": 116
+        },
+        {
+          "id": 24,
+          "ok": false,
+          "reply": "你主攻的方向是计算机，并且投递的方向是后端开发，所以你最终想做的工作方向是后端开发。",
+          "latency_ms": 8486,
+          "ctx_chars": 77
+        },
+        {
+          "id": 25,
+          "ok": false,
+          "reply": "你现在最急的事是明年三月前拿到大厂的offer。",
+          "latency_ms": 7133,
+          "ctx_chars": 103
+        },
+        {
+          "id": 26,
+          "ok": true,
+          "reply": "根据你的记忆，你主要投递的是字节和腾讯的岗位，且投递的岗位方向是大厂的后端开发。因此，目前看来你对非大厂非算法方向的岗位兴趣不大。",
+          "latency_ms": 10881,
+          "ctx_chars": 78
+        },
+        {
+          "id": 27,
+          "ok": true,
+          "reply": "你投递了字节跳动的大模型开发岗和腾讯的后端开发职位。",
+          "latency_ms": 6848,
+          "ctx_chars": 82
+        },
+        {
+          "id": 28,
+          "ok": true,
+          "reply": "你投的是字节的大模型开发岗。",
+          "latency_ms": 6671,
+          "ctx_chars": 100
+        },
+        {
+          "id": 29,
+          "ok": true,
+          "reply": "你投的是腾讯的后端开发岗位。",
+          "latency_ms": 5658,
+          "ctx_chars": 151
+        },
+        {
+          "id": 30,
+          "ok": true,
+          "reply": "搜狐的面试更新情况是：之前二面因项目深度不够被挂，但现在又说可以进行进一步的交流。",
+          "latency_ms": 8175,
+          "ctx_chars": 168
+        },
+        {
+          "id": 31,
+          "ok": true,
+          "reply": "二面因项目深度不够被挂。",
+          "latency_ms": 6263,
+          "ctx_chars": 163
+        },
+        {
+          "id": 32,
+          "ok": false,
+          "reply": "记忆里没有关于408知识库项目的相关信息，因此无法回答您是在什么时候开始做这个项目的。根据现有记忆，您主要关注的是提升项目经验以增强简历，并为此投递了一些岗位。",
+          "latency_ms": 12216,
+          "ctx_chars": 150
+        },
+        {
+          "id": 33,
+          "ok": true,
+          "reply": "llama.cpp并发四路吞吐从7.9提到20.5，吞吐提升了2.6倍。",
+          "latency_ms": 9800,
+          "ctx_chars": 259
+        },
+        {
+          "id": 34,
+          "ok": true,
+          "reply": "首字延迟从37秒降到1.1秒。",
+          "latency_ms": 7310,
+          "ctx_chars": 225
+        },
+        {
+          "id": 35,
+          "ok": true,
+          "reply": "你是在2026年10月20日发现Ollama并发问题的，当时四个请求需要排队。",
+          "latency_ms": 7885,
+          "ctx_chars": 253
+        },
+        {
+          "id": 36,
+          "ok": true,
+          "reply": "你通过优化llama.cpp的代码，使得并发四路吞吐从7.9提升到20.5，提升了2.6倍，并且最慢的首字延迟从37秒降到1.1秒。",
+          "latency_ms": 10599,
+          "ctx_chars": 184
+        },
+        {
+          "id": 37,
+          "ok": true,
+          "reply": "你用的是联想小新16 Pro，配置为16G内存，没有独显。",
+          "latency_ms": 6878,
+          "ctx_chars": 98
+        },
+        {
+          "id": 38,
+          "ok": true,
+          "reply": "你的电脑配置为联想小新16 Pro，16G内存，没有独显，根据这个配置，可能无法高效运行大模型，特别是像Ollama跑qwen2.5的7B这样的大模型。",
+          "latency_ms": 11886,
+          "ctx_chars": 170
+        },
+        {
+          "id": 39,
+          "ok": true,
+          "reply": "你最近使用的是Ollama跑qwen2.5的7B模型。",
+          "latency_ms": 6385,
+          "ctx_chars": 111
+        },
+        {
+          "id": 40,
+          "ok": true,
+          "reply": "你主要写Python编程语言。",
+          "latency_ms": 5586,
+          "ctx_chars": 70
+        },
+        {
+          "id": 41,
+          "ok": true,
+          "reply": "你会一点Vue3前端技术。",
+          "latency_ms": 6104,
+          "ctx_chars": 92
+        },
+        {
+          "id": 42,
+          "ok": false,
+          "reply": "根据记忆中的信息，没有提到您使用过哪些本地推理框架。",
+          "latency_ms": 7690,
+          "ctx_chars": 119
+        },
+        {
+          "id": 43,
+          "ok": true,
+          "reply": "我女朋友做设计工作。",
+          "latency_ms": 5478,
+          "ctx_chars": 53
+        },
+        {
+          "id": 44,
+          "ok": true,
+          "reply": "我女朋友在北京。",
+          "latency_ms": 4592,
+          "ctx_chars": 34
+        },
+        {
+          "id": 45,
+          "ok": false,
+          "reply": "记忆里没有关于您周末活动的具体信息，无法回答这个问题。根据您提供的记忆，主要关注的是项目、工作目标、学习进度和个人喜好等方面的信息。",
+          "latency_ms": 8623,
+          "ctx_chars": 60
+        },
+        {
+          "id": 46,
+          "ok": true,
+          "reply": "女朋友认为你太焦虑，这可能与你目前的求职状态有关。",
+          "latency_ms": 6162,
+          "ctx_chars": 71
+        },
+        {
+          "id": 47,
+          "ok": true,
+          "reply": "你们不在同一个城市，你的女朋友在北京，而你所在的城市是石家庄。",
+          "latency_ms": 6298,
+          "ctx_chars": 56
+        },
+        {
+          "id": 48,
+          "ok": true,
+          "reply": "根据记忆中的信息，没有提到你是否养宠物，所以无法回答你是否养宠物。",
+          "latency_ms": 7385,
+          "ctx_chars": 61
+        },
+        {
+          "id": 49,
+          "ok": true,
+          "reply": "记忆里没有关于身高的信息。",
+          "latency_ms": 5751,
+          "ctx_chars": 52
+        },
+        {
+          "id": 50,
+          "ok": true,
+          "reply": "根据记忆中的信息，没有提到您喜欢听什么音乐，因此无法回答这个问题。",
+          "latency_ms": 7467,
+          "ctx_chars": 66
+        }
+      ]
+    }
+  ]
+}

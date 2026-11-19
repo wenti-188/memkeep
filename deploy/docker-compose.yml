@@ -1,0 +1,42 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: memkeep-db
+    environment:
+      POSTGRES_USER: memkeep
+      POSTGRES_PASSWORD: memkeep
+      POSTGRES_DB: memkeep
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U memkeep -d memkeep"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    container_name: memkeep-app
+    environment:
+      MEMKEEP_DB: postgres
+      MEMKEEP_PG_DSN: postgresql://memkeep:memkeep@db:5432/memkeep
+      OLLAMA_BASE: http://host.docker.internal:11434
+      MEMKEEP_PORT: "5051"
+      MEMKEEP_RATE_LIMIT: "${MEMKEEP_RATE_LIMIT:-120}"
+      MEMKEEP_TOP_K: "${MEMKEEP_TOP_K:-8}"
+    ports:
+      - "5051:5051"
+    depends_on:
+      db:
+        condition: service_healthy
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  pgdata:
+    name: memkeep_pgdata

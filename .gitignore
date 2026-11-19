@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 *.log
 *.err
+node_modules/
+.pytest_cache/
+shot*.png
 storage/*.db
 storage/*.db-journal
 progress.txt
